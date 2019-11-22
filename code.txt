@@ -1,0 +1,7 @@
+// Internet Explorer 6-11
+            const body = document.querySelector('body')
+            if (navigator.userAgent.indexOf("Chrome") !== -1) {
+                body.classList.add('chrome');
+            } else if(navigator.userAgent.indexOf("Trident/") > -1){
+                body.classList.add('IE');
+            }
